@@ -4,7 +4,8 @@
     <HeaderComponent></HeaderComponent>
     <HeaderBottom></HeaderBottom>
     <router-view/>
-    <Footer></Footer>
+    <Footer class="mt-5"></Footer>
+    <footer-2></footer-2>
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 import HeaderBottom from './components/HeaderBottom.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
 import Footer from './components/Footer.vue'
+import Footer2 from './components/footer/Footer2.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     HeaderBottom,
-    Footer
+    Footer,
+    Footer2
   }
 }
 </script>

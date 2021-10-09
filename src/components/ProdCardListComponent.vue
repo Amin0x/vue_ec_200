@@ -1,14 +1,13 @@
 <template>
-  <div class="container">
+  <div class="mt-4">
     <div>
-      <a href="#"
+      <router-link to="/category/1"
         ><button type="button" class="aa-btn-category">
           {{ (name = "tablet") }}
-        </button></a
-      >
+        </button></router-link>
     </div>
-    <div class="row justify-content-center">
-      <carousel :autoplay="true" :nav="false" :dots="false" :margin="20" :items="6">
+    <div class="row justify-content-center mt-4">
+      <carousel :autoplay="true" :nav="false" :dots="false" :margin="20" :items="4">
         <prod-card-component
           v-for="item in products"
           v-bind:item="item"

@@ -1,8 +1,8 @@
 <template>
-  <div class="card aa-product-card">
+    <div class="card card_fashion">
     <router-link to="/products/1"><img class="img-fluid" v-bind:src="product.productImage" v-bind:alt="product.productImage"></router-link>
     <div class="card-body">
-      <div class="aa-price-wrap">
+      <div class="price-wrap">
         <div class="price">{{ product.price }}</div>
         <div class="brand"><img v-bind:src="product.brandLogo" v-bind:alt="product.brandLogo"></div>
       </div>
@@ -10,7 +10,7 @@
       <div class="aa-title"><router-link to="/products/1">{{ product.title }}</router-link></div>
       
     </div>
-    <div class="aa-buttons-wrap d-flex">
+    <div class="aa-buttons-wrap d-flex ">
         <div class="aa-button">
           <a href="#" class="btn" role="button"><b-icon icon="heart"></b-icon></a>
         </div>
@@ -20,7 +20,7 @@
         <div class="aa-button">
           <a href="#" class="btn" role="button"><b-icon icon="arrow-left-right"></b-icon></a>
         </div>
-      </div>
+    </div>
   </div>
 </template>
 
@@ -38,59 +38,66 @@ export default {
             }
         }
     },
-  mounted() {
-    console.log("Component mounted.");
-  },
-};
+    mounted() {
+        console.log("Component mounted.");
+    },
+}
 </script>
 
-<style scoped>
-.aa-buttons-wrap, .aa-price-wrap{
-  display: flex;
-  align-items: center;
+<style lang="scss" scoped>
+
+.aa-product-card{
+    &:hover{
+        box-shadow: 0 0 3px 1px rgba(100, 100, 100, 0.2);
+    }
+
+    .price-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .price{
+            color: #b71c1c;
+            font-size: 1rem;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .brand{}
+    }
+
+    .aa-stores-count{
+        a{
+            text-decoration: none;
+            color: #4b4b4b;
+            font-size: .8rem;
+            font-weight: 700;
+        }
+    }
+    .aa-title{
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 700;
+
+        a {
+            text-decoration: none;
+            color: #111111;
+        }
+    }
+    .aa-buttons-wrap{
+        .aa-button{
+            width: 33.3333%;
+            height: 40px;
+            padding: 0.5rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                background-color: #f7f7f7;
+            }
+        }
+    }
 }
 
-.aa-price-wrap{
-  justify-content: space-between;
-}
-.aa-button{
-  width: 33.3333%;
-  height: 40px;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.aa-button:hover {
-  background-color: #f7f7f7;
-}
-.aa-product-card:hover{
-    box-shadow: 0 0 3px 1px rgba(100, 100, 100, 0.2);
-}
-.aa-product-card .price{
-    color: #b71c1c;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.aa-product-card .aa-title{
-  
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-.aa-product-card .aa-title a{
-  text-decoration: none;
-  color: #111111;
-}
-
-.aa-stores-count a{
-  text-decoration: none;
-  color: #4b4b4b;
-  font-size: .8rem;
-  font-weight: 700;
-}
 </style>

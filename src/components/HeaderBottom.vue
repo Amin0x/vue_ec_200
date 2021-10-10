@@ -17,62 +17,44 @@
               </ul> 
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
-            <!-- <ul class="submenu right">
+              <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
+              <ul class="submenu right">
                   <li>Lorem, ipsum dolor.</li>
                   <li>Nesciunt, deleniti unde?</li>
                   <li>Dignissimos, distinctio molestiae!</li>
-              </ul> -->
+              </ul>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
-            <!-- <ul class="submenu right">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Minus soluta amet delectus?</li>
-                <li>Sunt perferendis temporibus rem.</li>
-                <li>Repudiandae eum officia voluptas?</li>
-                <li>Quos distinctio qui sed!</li>
-                <li>Ratione exercitationem expedita libero.</li>
-            </ul> -->
+              <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
+              <ul class="submenu right">
+                  <li>Lorem ipsum dolor sit.</li>
+                  <li>Minus soluta amet delectus?</li>
+                  <li>Sunt perferendis temporibus rem.</li>
+                  <li>Repudiandae eum officia voluptas?</li>
+                  <li>Quos distinctio qui sed!</li>
+                  <li>Ratione exercitationem expedita libero.</li>
+              </ul>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
           <li>
-            <a href="#"
-              ><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a
-            >
+            <a href="#"><b-icon icon="credit-card"></b-icon> Lorem ipsum dolor sit.</a>
           </li>
         </ul>
       </li>
@@ -114,6 +96,7 @@ export default {
           display: block;
         }
       }
+
       a {
         padding: 0 1rem;
         line-height: 40px;
@@ -134,6 +117,20 @@ export default {
         background-color: #f9f9f9;
         color: #000;
 
+        li .submenu.right{
+          display: none;
+          background-color: #fff;
+          width: 230px;
+          list-style: none;
+          position: absolute;
+          left: 290px;
+          top: 0px;
+        }
+
+        li:hover > .submenu.right{
+          display: block;
+        }
+
         li a {
           display: block;
           text-decoration: none;
@@ -151,13 +148,7 @@ export default {
           color: #fff !important;
         }
 
-        li .submenu {
-          width: 230px;
-          display: block;
-          list-style: none;
-          position: absolute;
-          left: 230px;
-        }
+        
       }
     }
   }

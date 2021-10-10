@@ -3,7 +3,7 @@
     <div class="aa-navbar-top">
         <div class="container">
            <div class="d-flex align-items-center">
-                <div><img src="../assets/Logo-1.png" alt="logo"></div>
+                <router-link to="/"><img src="../assets/Logo-1.png" alt="logo"></router-link>
                 <div class="ms-auto"><button class="aa-login-btn">Login / Register</button></div>
             </div>
         </div>

@@ -5,7 +5,7 @@
         <div class="am-footer py-4">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-6 col-xl-3 mt-4 mt-xl-0">
             <div class="d-flex flex-column px-2">
               <div><strong class="text-white">Follow Us</strong></div>
               <div class="text-light am-social">
@@ -13,7 +13,7 @@
                 <a href="#" class="text-light"><b-icon icon="instagram"></b-icon></a>
                 <a href="#" class="text-light"><b-icon icon="twitter"></b-icon></a>
               </div>
-              <div class="mt-2">
+              <div class="mt-4">
                 <strong class="text-white">Disclaimer</strong>
               </div>
               <div>
@@ -26,8 +26,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="d-flex flex-column px-2">
+          <div class="col-md-6 col-xl-3 mt-4 mt-xl-0">
+            <div class="d-flex flex-column px-2 ">
               <div><strong class="text-white">Customers</strong></div>
               <div>
                 <p class="m-0">
@@ -46,12 +46,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 col-xl-3 mt-4 mt-xl-0">
             <div class="d-flex flex-column px-2">
               <div><strong class="text-white">Stores Owners</strong></div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-6 col-xl-3 mt-4 mt-xl-0">
             <div class="d-flex flex-column px-2">
               <div><strong class="text-white">The News</strong></div>
               <div>

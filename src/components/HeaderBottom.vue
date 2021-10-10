@@ -3,11 +3,10 @@
     <ul class="aa-nav">
       <li class="menu-item">
         <a href="#">All Category</a>
-        <ul class="submenu dropdown">
+        <ul class="submenu dropdown shadow-lg">
           <li>
-            <a href="#"><b-icon icon="credit-card"></b-icon> Mobile & Tablet</a
-            >
-            <!-- <ul class="submenu right">
+            <a href="#"><b-icon icon="credit-card"></b-icon> Mobile & Tablet</a>
+                <ul class="submenu right">
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem, ipsum dolor.</li>
@@ -15,7 +14,7 @@
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem, ipsum dolor.</li>
                   <li>Lorem, ipsum dolor.</li>
-              </ul> -->
+              </ul> 
           </li>
           <li>
             <a href="#"

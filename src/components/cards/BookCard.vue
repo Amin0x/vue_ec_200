@@ -1,24 +1,21 @@
 <template>
-  <div class="card">
-      <div class="img"><img src="" alt=""></div>
-      <div class="card-body">
-          <p class="title">
-
-          </p>
-          <p class="price">
-
-          </p>
-          <p class="link">
-
-          </p>
-      </div>
-      <div class="action-buttons"></div>
-  </div>
+    <div>
+        <div class="card">
+            <div><img class="img-fluid" src="" alt=""></div>
+            <div class="card-body">
+                <h4 class="title">Lorem ipsum dolor sit amet.</h4>
+                <p class="price">1999.99 SAR</p>
+                <p class="link">Lorem, ipsum.</p>
+            </div>
+            <div class="action-buttons"></div>
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
-    data(){
+    name: "BookCard",
+    data: function(){
         return{
 
         }

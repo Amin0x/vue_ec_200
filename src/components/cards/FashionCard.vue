@@ -26,7 +26,9 @@
 
 <script>
 export default {
-    data() {
+    name: "FashionCard",
+
+    data: function(){
         return {
             product:{
                 title: 'vivo Y20S ,فيفو واي 20 إس ، 4 جي ، 128 جيجا ، بيوريست بلو',
@@ -38,6 +40,7 @@ export default {
             }
         }
     },
+
     mounted() {
         console.log("Component mounted.");
     },
@@ -63,7 +66,7 @@ export default {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .brand{}
+        
     }
 
     .aa-stores-count{

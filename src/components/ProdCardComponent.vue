@@ -26,7 +26,8 @@
 
 <script>
 export default {
-    data() {
+    name : "ProdCardComponent",
+    data: function() {
         return {
             product:{
                 title: 'vivo Y20S ,فيفو واي 20 إس ، 4 جي ، 128 جيجا ، بيوريست بلو',

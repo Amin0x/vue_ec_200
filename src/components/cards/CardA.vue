@@ -7,11 +7,11 @@
           <p class="brand">MOBILE</p>
           <h3>Lorem ipsum dolor sit amet consectetur.</h3>
           <p class="desc" style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, itaque aspernatur? Animi, ducimus.</p>
-          <p><img src="https://www.owniqs.co/wp-content/plugins/content-egg/res/logos/amazon-sa.png" alt=""></p>
+          <p class="brand_logo"><img class="img-fluid" src="https://www.owniqs.co/wp-content/plugins/content-egg/res/logos/amazon-sa.png" alt=""></p>
       </div>
       <div class="card-footer">
           <div class="d-flex justify-content-between align-items-center">
-              <span class="d-inline-flex flex-column"><span>2000 SAR</span><span>2000 SAR</span></span>
+              <span class="d-inline-flex flex-column"><span class="price">2000 SAR</span><span class="old-price">2000 SAR</span></span>
               <span style="color: #388e3c; font-size: .8rem;">+6 Stores</span>
           </div>
       </div>
@@ -20,14 +20,16 @@
           <span class="discount">-12%</span>
       </div>
       <div class="buttons_wrap">
-          <a href=""></a><a href=""></a><a href=""></a>
+          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="heart"></b-icon></a>
+          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="heart"></b-icon></a>
+          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="heart"></b-icon></a>
       </div>
   </div>
 </template>
 
 <script>
 export default {
-
+    name: "CardA",
 }
 </script>
 
@@ -59,11 +61,46 @@ export default {
     }
 
     .buttons_wrap{
+        display: none;
         position: absolute;
-        top: 5;
-        left: 5;
-        display: inline-flex;
+        top: 5px;
+        left: 5px;
         flex-direction: column;
+
+        .aa-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 12px;
+            background-color: #ff5252;
+            color: #fafafa;
+        }
+
+        .aa-btn:not(:last-child){
+            margin-bottom: .5rem;
+        }
+    }
+
+    &:hover .buttons_wrap{
+        display: inline-flex;
+    }
+
+    .price{
+        font-size: 1rem;
+        font-weight: 700;
+        color: #d32f2f;
+    }
+    .old-price{
+        font-size: .8rem;
+        text-decoration: line-through;
+        color: #424242;
+    }
+
+    .brand_logo{
+        max-width: 66px;
     }
 }
 </style>

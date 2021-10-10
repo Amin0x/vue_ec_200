@@ -18,14 +18,15 @@
     <prod-card-list-component class="mt-4"></prod-card-list-component>
     <prod-card-list-component class="mt-4"></prod-card-list-component>
     <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
+    <book-list-component class="mt-4"></book-list-component>
+    
     </div>
   </div>
 </template>
 
 <script>
 import Banner from '../components/banner/Banner.vue';
+import BookListComponent from '../components/BookListComponent.vue';
 import ProdCardListComponent from "../components/ProdCardListComponent.vue";
 
 export default {
@@ -33,6 +34,7 @@ export default {
   components: {
     ProdCardListComponent,
     Banner,
+    BookListComponent,
   },
 
   computed: {},

@@ -18,29 +18,29 @@
           <div class="row">
             <div class="col-md-4 aa-prod-img-wrap">
               <img class="img-fluid" src="https://backend.eddy.com.sa/media/catalog/product/cache/94e6266911c855fdf4ece88e8e419e57/4/0/40367.jpg" alt="">
-              <div class="d-flex py-2" style="hieght:80px;">
-                <img class="img-fluid img-thumbnail" src="" alt="">
-                <img class="img-fluid img-thumbnail" src="" alt="">
-                <img class="img-fluid img-thumbnail" src="" alt="">
-                <img class="img-fluid img-thumbnail" src="" alt="">
+              <div class="aa-list-imgs d-flex py-2" style="hieght:80px;">
+                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
+                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
               </div>
             </div>
             <div class="col-md-8">
               <div class="d-flex justify-content-between align-items-center">
                 <div><span>Add your review</span> <span>10</span></div>
-                <a href="#">Mobile</a>
+                <a href="#" class="aa-category">Mobile</a>
               </div>
               <hr />
               <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center">
                   <del>
-                    <span class="price-old">199.00 SAR</span>
-                  </del><span class="ms-3">149.00 SAR</span>
+                    <small class="price-old">199.00 SAR</small>
+                  </del><span class="price ms-3">149.00 SAR</span>
                 </div>
                 <a
                   name=""
                   id=""
-                  class="btn btn-link"
+                  class="aa-btn-low-price"
                   href="#"
                   role="button"
                 ><b-icon icon="heart"></b-icon> Set Lowest Price Alert</a>
@@ -54,7 +54,7 @@
                 <a
                   name=""
                   id=""
-                  class="btn btn-primary"
+                  class="btn btn-primary aa-btn-buy"
                   href="#"
                   role="button"
                 >Buy for best price</a>
@@ -82,7 +82,8 @@
           </div>          
         </div>       
         <div class="aa-section mt-4">
-          <price-list></price-list>
+          <product-description></product-description>
+          <price-list class="mt-4"></price-list>
           <price-history class="mt-4"></price-history>
           <additional-info class="mt-4"></additional-info>
           <prod-news class="mt-4"></prod-news>
@@ -105,6 +106,7 @@ import PriceHistory from '../components/prod_details/PriceHistory.vue';
 import PriceList from '../components/prod_details/PriceList.vue';
 import ProdNews from '../components/prod_details/ProdNews.vue';
 import ProdReviews from '../components/prod_details/ProdReviews.vue';
+import ProductDescription from '../components/prod_details/ProductDescription.vue';
 import ProdVideos from '../components/prod_details/ProdVideos.vue';
 import RelatedProducts from '../components/prod_details/RelatedProducts.vue';
 import Sidebar from '../components/prod_details/Sidebar.vue';
@@ -117,7 +119,7 @@ import Sidebar from '../components/prod_details/Sidebar.vue';
 //import { Bar } from 'vue-chartjs'
 
 export default {
-  data() {
+  data: function() {
     return {
       donutData: [
         { label: "Red", value: 300 },
@@ -139,8 +141,8 @@ export default {
     ProdNews,
     ProdReviews,
     ProdVideos,
-    RelatedProducts
-    // AreaChart,
+    RelatedProducts,
+    ProductDescription,
   },
 };
 </script>
@@ -152,18 +154,69 @@ export default {
       font-size: 0.75rem;
     }
 
+    .aa-list-imgs img{
+      max-width: 80px;
+    }
+    .aa-list-imgs img:not(:last-child){
+      margin-right: .5rem;
+    }
+
     .aa-add-to-wish .btn:not(:last-child) {
       margin-right: 0.5rem;
     }
+
+    .aa-prod-title {
+      font-size: 1.5rem;
+    }
+
+    .aa-category{
+      font-size: 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color:#a3a3a3;
+
+      &:hover{
+        color: #696969;
+        text-decoration: underline;
+      }
+    }
+
+    .aa-btn-low-price{
+      font-size: .8rem;
+      text-decoration: none;
+      color:#a3a3a3;
+
+      &:hover{
+        color: #696969;
+      }
+    }
+    .price-old {
+      text-decoration: line-through;
+      font-size: .8rem;
+      font-weight: 400;
+      color: #bbb;
+    }
+
+    .price{
+      font-size: 1rem;
+      font-weight: 700;
+      color: #d32f2f;
+    }
+
+    .aa-btn-buy{
+      background-color: #e53935;
+      border-color: #e53935;
+
+      &:hover{
+        background-color: #d32f2f;
+        border-color: #d32f2f;
+      }
+
+      &:focus{
+        box-shadow: 0 0 0 0.25rem rgba(235, 149, 148, 0.5);
+      }
+    }
   }
 }
-.aa-prod-title {
-  font-size: 1.5rem;
-}
-.price-old {
-  text-decoration: line-through;
-  font-size: 18px;
-  font-weight: 400;
-  color: #bbb;
-}
+
 </style>

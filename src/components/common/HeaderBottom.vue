@@ -7,13 +7,13 @@
           <li>
             <a href="#"><b-icon icon="credit-card"></b-icon> Mobile & Tablet</a>
                 <ul class="submenu right">
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
-                  <li>Lorem, ipsum dolor.</li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
+                  <li><a href="#" style="display:block; line-height:">Lorem, ipsum dolor.</a></li>
               </ul> 
           </li>
           <li>

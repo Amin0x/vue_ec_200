@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Index from '../views/Index.vue'
 import ProductDetails from '../views/ProductDetails.vue'
 import Category from '../views/Category.vue'
+import Deals from '../views/Deals.vue'
+import Market from '../views/Market.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +14,16 @@ const routes = [
     path: '/',
     name: 'Index',
     component: Index
+  },
+  {
+    path: '/market',
+    name: 'Market',
+    component: Market
+  },
+  {
+    path: '/deals',
+    name: 'Deals',
+    component: Deals
   },
   {
     path: '/category/1',

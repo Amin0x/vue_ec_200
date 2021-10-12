@@ -9,17 +9,17 @@
         </div>
       </div>
     </div>
+
     <div class="container">
       <banner></banner>
       <prod-card-list-component></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <prod-card-list-component class="mt-4"></prod-card-list-component>
-    <book-list-component class="mt-4"></book-list-component>
-    
+      <prod-card-list-component class="mt-4"></prod-card-list-component>
+      <prod-card-list-component class="mt-4"></prod-card-list-component>
+      <prod-card-list-component class="mt-4"></prod-card-list-component>
+      <prod-card-list-component class="mt-4"></prod-card-list-component>
+      <prod-card-list-component class="mt-4"></prod-card-list-component>
+      <prod-card-list-component class="mt-4"></prod-card-list-component>
+      <book-list-component class="mt-4"></book-list-component>    
     </div>
 
     <div>
@@ -47,7 +47,7 @@ export default {
 
   mounted() {},
 
-  data() {
+  data: function() {
     return {
       msg: "Welcome to Your Vue.js App",
     };

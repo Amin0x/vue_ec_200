@@ -1,7 +1,7 @@
 <template>
   <div class="card card_a">
       <div class="card-img">
-          <img src="https://dk3152lt3zvww.cloudfront.net/catalog/product/cache/94e6266911c855fdf4ece88e8e419e57/4/0/40567.jpg" alt="">
+          <img class="img-fluid" src="https://dk3152lt3zvww.cloudfront.net/catalog/product/cache/94e6266911c855fdf4ece88e8e419e57/4/0/40567.jpg" alt="">
       </div>
       <div class="card-body">
           <p class="brand">MOBILE</p>

@@ -10,10 +10,10 @@
 </template>
 
 <script>
-import HeaderBottom from './components/HeaderBottom.vue'
-import HeaderComponent from './components/HeaderComponent.vue'
-import Footer from './components/Footer.vue'
-import Footer2 from './components/footer/Footer2.vue'
+import HeaderBottom from './components/common/HeaderBottom.vue'
+import HeaderComponent from './components/common/HeaderComponent.vue'
+import Footer from './components/common/Footer.vue'
+import Footer2 from './components/common/Footer2.vue'
 
 export default {
   name: 'App',

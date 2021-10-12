@@ -3,12 +3,13 @@
     <div class="aa-navbar-top">
         <div class="container">
            <div class="d-flex align-items-center">
-                <router-link to="/"><img src="../assets/Logo-1.png" alt="logo"></router-link>
+                <router-link to="/"><img src="../../assets/Logo-1.png" alt="logo"></router-link>
                 <div class="ms-auto"><button class="aa-login-btn">Login / Register</button></div>
             </div>
         </div>
     </div>
 </template>
+
 
 <script>
     export default {

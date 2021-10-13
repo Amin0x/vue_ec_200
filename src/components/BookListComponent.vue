@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="row">
-            <carousel :autoplay="true" :nav="false" :dots="false" :margin="20" :items="4">
+            <carousel :autoplay="false" :nav="false" :dots="false" :margin="20" :items="4">
                 <book-card></book-card>
                 <book-card></book-card>
                 <book-card></book-card>

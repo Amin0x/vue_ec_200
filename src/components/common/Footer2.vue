@@ -27,10 +27,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div>
+                            <div class="h4">
+                                Subscribe To Get More
+                            </div>
+                            <div class="subscribe">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div>
+                                <button type="submit" class="btn aa-btn-sub">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="mt-3 border-top">
+            <div class="mt-3">
+                <hr>
                 <div class="text-light text-center"><small>Copyright &COPY OWNIQS 2021</small></div>
             </div>
         </div>
@@ -70,6 +83,23 @@ export default {
 
     .am-social a:hover{
         color: coral !important;
+    }
+
+    .subscribe input {
+        outline: 0;
+        border: 1px solid orange;
+        padding: .5rem;
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        background-color: #eff5f7;
+    }
+
+    .aa-btn-sub{
+        background-color: orange;
+        width: 100%;
+        padding: 0.8rem;
+        margin-top: 1rem;
     }
 }
 </style>

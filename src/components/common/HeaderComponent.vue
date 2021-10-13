@@ -4,7 +4,9 @@
         <div class="container">
            <div class="d-flex align-items-center">
                 <router-link to="/"><img src="../../assets/Logo-1.png" alt="logo"></router-link>
-                <div class="ms-auto"><button class="aa-login-btn">Login / Register</button></div>
+                <div class="ms-auto">
+                    <button class="aa-login-btn">Login / Register</button>
+                </div>
             </div>
         </div>
     </div>
@@ -14,6 +16,11 @@
 <script>
     export default {
        name:'HeaderComponent',
+       data: function() {
+           return {
+
+           }
+       }
     }
 </script>
 
@@ -33,10 +40,8 @@
     text-decoration: none;
     transition: all 0.4s ease 0s;
     font-weight: 700;
-    line-height: .8em;
     white-space: normal;
     position: relative;
-    font-size: 15px;
     font-style: normal;
     border: 1px solid transparent;
     background-color: #f6f6f6;

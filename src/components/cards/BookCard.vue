@@ -5,8 +5,10 @@
             <div class="card-body">
                 <p class="title">كتاب الجيب : إدارة الفرق – حلول من الخبراء لتحديات يومية – قم بتسوية الصراعات – يسّر الاتصال – شجّع الإبداع Paperback 1</p>
             </div>
+            <div class="action-buttons">
                 <p class="price">1999.99 SAR</p>
-            <div class="action-buttons"><a href="#">Go To Store</a></div>
+                <a href="#" class="btn btn-danger aa-btn">Go To Store</a>
+            </div>
         </div>
     </div>
 </template>
@@ -34,32 +36,37 @@ export default {
     }
 
     .price{
+        height: 40px;
         margin: 0;
         font-size: 1rem;
         font-weight: 700;
         color: red;
         text-align: center;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s ease-in-out;
         opacity: 1;
     }
 
-    .price:hover{
-        transform: translateY(-10px);
+    .card:hover .price{        
         opacity: 0;        
     }
-
-    .price:hover ~ .action-buttons{
-            transform: translateY(-30px);
-            opacity: 1;
-            visibility: visible;
+        
+    .action-buttons {
+        margin-bottom: .5rem;
+        position: relative;
     }
-    .action-buttons{
-        text-align: center;
-        margin-bottom: 1rem;
-        // transform: translateY(-10px);
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-        visibility: hidden;
+    .aa-btn{
+        display: block;
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        top: 0;
+        margin: 0 auto;
+        transform: translateY(50px);
+        transition: all 0.350s ease-in-out;
+    }
+
+    .card:hover .aa-btn{
+        transform: translateY(0px);
     }
     
 </style>

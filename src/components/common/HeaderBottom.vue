@@ -10,10 +10,6 @@
                   <li><a href="#" class="link">Mobiles</a></li>
                   <li><a href="#" class="link">Tablet</a></li>
                   <li><a href="#" class="link">Mobile And Tablet accessories</a></li>
-                  <li><a href="#" class="link">Lorem, ipsum dolor.</a></li>
-                  <li><a href="#" class="link">Lorem, ipsum dolor.</a></li>
-                  <li><a href="#" class="link">Lorem, ipsum dolor.</a></li>
-                  <li><a href="#" class="link">Lorem, ipsum dolor.</a></li>
               </ul> 
           </li>
           <li>
@@ -258,11 +254,7 @@ export default {
           display: block;
           list-style: none;
           position: relative;
-        }
-
-        
-
-        
+        }       
     }
   }
 }

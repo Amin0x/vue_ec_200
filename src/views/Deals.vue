@@ -2,9 +2,9 @@
 // markets page
 <template>
     <div class="container">
-        <div>
-            <img src="" alt="">
-        </div>
+        <section>
+            <banner></banner>
+        </section>
         <section>
             <div class="section-hdr">
                 <h3>Special Offers</h3>
@@ -65,9 +65,10 @@
 </template>
 
 <script>
+import Banner from '../components/banner/Banner.vue'
 import CardA from '../components/cards/CardA.vue'
 export default {
-  components: { CardA },
+  components: { CardA, Banner },
     name: "Deals",
     data: function(){
         return {

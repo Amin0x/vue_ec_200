@@ -206,6 +206,8 @@ export default {
     .aa-btn-buy{
       background-color: #e53935;
       border-color: #e53935;
+      border-radius: 0;
+      padding: 0.575rem 1.35rem;
 
       &:hover{
         background-color: #d32f2f;

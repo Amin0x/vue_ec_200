@@ -63,7 +63,7 @@ export default {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .brand{}
+        // .brand{}
     }
 
     .stores-count{

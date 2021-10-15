@@ -63,6 +63,7 @@
 
 <script>
     export default {
+        props: [data],
         name:"ProductModal",
         data: function(){
             return {
@@ -103,7 +104,18 @@
         },
 
         methods: {
+            viewModal: function(k){
 
+                this.data.title = k.title;
+                this.data.image = k.image;
+                this.data.featured = k.featured;
+                this.data.discount = k.discount;
+                this.data.price = k.price;
+                this.data.oldPrice = k.oldPrice;
+                this.data.stores = k.stores;
+
+                this.$bvModal.show();
+            }
         }
     }
 </script>

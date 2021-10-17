@@ -10,12 +10,11 @@
             </a></div>
           </div>
           <div class="d-flex align-items-center" style="height: 80px">
-            <img
-              class="img-fluid"
+            <img              
               src="https://www.owniqs.co/wp-content/plugins/content-egg/res/logos/amazon-sa.png"
-              alt=""
+              alt="" class="mx-4 img-fluid" style="max-width: 70px;"
             />
-            <div class="ms-2 flex-grow-1"><a href="">ابل ايفون 12</a></div>
+            <div class="ms-2 flex-grow-1"><a href="" class="text-reset"><strong>ابل ايفون 12</strong></a></div>
             <div class="d-flex flex-column ms-2 me-3">
               <span class="price">2,446.40 SAR</span><span class="strike">4,140.00 SAR</span>
             </div>
@@ -26,9 +25,9 @@
           <div class="d-flex align-items-center" style="height: 80px">
             <img
               src="https://www.owniqs.co/wp-content/plugins/content-egg/res/logos/amazon-sa.png"
-              alt=""
+              alt="" class="mx-4 img-fluid" style="max-width: 70px;"
             />
-            <div class="ms-2 flex-grow-1"><a href="">ابل ايفون 12</a></div>
+            <div class="ms-2 flex-grow-1"><a href="" class="text-reset"><strong>ابل ايفون 12</strong></a></div>
             <div class="d-flex flex-column ms-2 me-3">
               <span class="price">2,446.40 SAR</span><span class="strike">4,140.00 SAR</span>
             </div>
@@ -36,12 +35,13 @@
               <button class="btn btn-danger">اذهب الى المتجر</button>
             </div>
           </div>
+          
           <div class="d-flex align-items-center" style="height: 80px">
             <img
               src="https://www.owniqs.co/wp-content/plugins/content-egg/res/logos/amazon-sa.png"
-              alt=""
+              alt="" class="mx-4 img-fluid" style="max-width: 70px;"
             />
-            <div class="ms-2 flex-grow-1"><a href="">ابل ايفون 12</a></div>
+            <div class="ms-2 flex-grow-1"><a href="" class="text-reset"><strong>ابل ايفون 12</strong></a></div>
             <div class="d-flex flex-column ms-2 me-3">
               <span class="price">2,446.40 SAR</span><span class="strike">4,140.00 SAR</span>
             </div>

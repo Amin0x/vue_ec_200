@@ -1,15 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import Index from '../views/Index.vue'
 import ProductDetails from '../views/ProductDetails.vue'
 import Category from '../views/Category.vue'
+import Categories from '../views/Categories.vue'
 import Deals from '../views/Deals.vue'
 import Market from '../views/Market.vue'
+import TermsConditions from '../views/TermsConditions.vue'
+import Privacy from '../views/Privacy.vue'
+import test from '@/views/test.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/test',
+    name: 'test',
+    component: test
+  },
   {
     path: '/',
     name: 'Index',
@@ -26,6 +34,11 @@ const routes = [
     component: Deals
   },
   {
+    path: '/categories',
+    name: 'Categories',
+    component: Categories
+  },
+  {
     path: '/category/1',
     name: 'Category',
     component: Category
@@ -34,6 +47,16 @@ const routes = [
     path: '/products/1',
     name: 'ProductDetails',
     component: ProductDetails
+  },
+  {
+    path: '/about/term',
+    name: 'TermsConditions',
+    component: TermsConditions
+  },
+  {
+    path: '/about/privacy',
+    name: 'Privacy',
+    component: Privacy
   },
   {
     path: '/about',

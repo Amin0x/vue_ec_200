@@ -18,16 +18,17 @@
           <div class="row">
             <div class="col-md-4 aa-prod-img-wrap">
               <img class="img-fluid" src="https://backend.eddy.com.sa/media/catalog/product/cache/94e6266911c855fdf4ece88e8e419e57/4/0/40367.jpg" alt="">
-              <div class="aa-list-imgs d-flex py-2" style="hieght:80px;">
-                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
-                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
-                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
-                <img class="img-fluid img-thumbnail" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt="">
+              <div class="row aa-list-imgs py-2" style="hieght:80px;">
+                <gallery :images="images" :index="index" @close="index = null"></gallery>
+                <div class="col-3 px-1"><img class="image img-fluid img-thumbnail" @click="index = 1" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt=""></div>
+                <div class="col-3 px-1"><img class="image img-fluid img-thumbnail" @click="index = 2" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt=""></div>
+                <div class="col-3 px-1"><img class="image img-fluid img-thumbnail" @click="index = 3" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt=""></div>
+                <div class="col-3 px-1"><img class="image img-fluid img-thumbnail" @click="index = 4" src="https://m.media-amazon.com/images/I/415ucnGB51L._AC_SR38.jpg" alt=""></div>
               </div>
             </div>
             <div class="col-md-8">
               <div class="d-flex justify-content-between align-items-center">
-                <div><span>Add your review</span> <span>10</span></div>
+                <div class="aa-add-review"><span>Add your review</span> <span>10</span></div>
                 <a href="#" class="aa-category">Mobile</a>
               </div>
               <hr />
@@ -61,7 +62,7 @@
               </div>
               <hr />
               <div class="aa-prod-details">
-                <ul>
+                <ul class="p-2">
                   <li>شاشة Super Retina XDR مقاس 6.1 إنش</li>
                   <li>Ceramic Shield، أقوى من زجاج أي هاتف ذكي</li>
                   <li>5G لسرعات تنزيل فائقة وتشغيل عبر الإنترنت عالي الجودة</li>
@@ -70,14 +71,14 @@
                   <li>Lorem ipsum dolor sit amet consectetur.</li>
                 </ul>
               </div>
-              <div><a href="#">APPLE</a></div>
+              <div><a href="#" class="text-muted">APPLE</a></div>
               <div class="mt-2">
-                <a href="#" class="me-2"><b-icon icon="facebook"></b-icon></a>
-                <a href="#" class="me-2"><b-icon icon="twitter"></b-icon></a>
-                <a href="#" class="me-2"><b-icon icon="instagram"></b-icon></a>
-                <a href="#" class="me-2"><b-icon icon="envelope"></b-icon></a>
+                <a href="#" class="me-2 text-muted"><b-icon icon="facebook"></b-icon></a>
+                <a href="#" class="me-2 text-muted"><b-icon icon="twitter"></b-icon></a>
+                <a href="#" class="me-2 text-muted"><b-icon icon="instagram"></b-icon></a>
+                <a href="#" class="me-2 text-muted"><b-icon icon="envelope"></b-icon></a>
               </div>
-              <div class="mt-2">Last updated on September 27, 2021 5:17 am</div>
+              <div class="mt-2 text-muted text-uppercase"><small style="font-size:.7rem;">Last updated on September 27, 2021 5:17 am</small></div>
             </div>
           </div>          
         </div>       
@@ -110,6 +111,7 @@ import ProductDescription from '../components/prod_details/ProductDescription.vu
 import ProdVideos from '../components/prod_details/ProdVideos.vue';
 import RelatedProducts from '../components/prod_details/RelatedProducts.vue';
 import Sidebar from '../components/prod_details/Sidebar.vue';
+import VueGallery from 'vue-gallery';
 // import jQuery from 'jquery'
 // import Raphael from "raphael/raphael";
 // global.Raphael = Raphael;
@@ -130,6 +132,14 @@ export default {
         { label: "Yellow", value: 100 },
         { label: "Yellow", value: 100 },
       ],
+
+      images: [
+          'https://blackbox.com.sa/media/catalog/product/cache/0a223e35cc64ce5778706694387874ed/l/t/lt19hbhwln_-_blackbox.jpeg',
+          'https://www.lg.com/sa_en/images/refrigerators/md06055636/gallery/Desktop_05.jpg',
+          'https://www.lg.com/sa_en/images/refrigerators/md06055636/gallery/Desktop_02.jpg',
+          'https://blackbox.com.sa/media/catalog/product/cache/0a223e35cc64ce5778706694387874ed/l/t/lt19hbhwln_-_blackbox.jpeg',
+        ],
+        index: null,
     };
   },
   name: "ProductDetails",
@@ -143,6 +153,7 @@ export default {
     ProdVideos,
     RelatedProducts,
     ProductDescription,
+    'gallery': VueGallery,
   },
 };
 </script>
@@ -155,11 +166,9 @@ export default {
     }
 
     .aa-list-imgs img{
-      max-width: 80px;
+      min-width: 33%;
     }
-    .aa-list-imgs img:not(:last-child){
-      margin-right: .5rem;
-    }
+    
 
     .aa-add-to-wish .btn:not(:last-child) {
       margin-right: 0.5rem;
@@ -170,7 +179,7 @@ export default {
     }
 
     .aa-category{
-      font-size: 1rem;
+      font-size: 0.875rem;
       text-decoration: none;
       text-transform: uppercase;
       color:#a3a3a3;
@@ -179,6 +188,10 @@ export default {
         color: #696969;
         text-decoration: underline;
       }
+    }
+
+    .aa-add-review{
+      font-size: 0.875rem;
     }
 
     .aa-btn-low-price{

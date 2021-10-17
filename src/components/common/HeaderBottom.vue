@@ -5,7 +5,7 @@
         <a href="#" class="menu-item-link">All Category</a>
         <ul class="submenu dropdown shadow-lg">
           <li>
-              <a href="#" class="link"><b-icon icon="mobile-alt"></b-icon> Mobile, Tablet</a>
+              <a href="#" class="link"><b-icon icon="phone"></b-icon> Mobile, Tablet</a>
               <ul class="submenu right">
                   <li><a href="#" class="link">Mobiles</a></li>
                   <li><a href="#" class="link">Tablet</a></li>
@@ -13,7 +13,7 @@
               </ul> 
           </li>
           <li>
-              <a href="#" class="link"><b-icon icon="laptop"></b-icon>Computers, Laptops</a>
+              <a href="#" class="link"><b-icon icon="mouse"></b-icon> Computers, Laptops</a>
               <ul class="submenu right">
                   <li><a href="#" class="link">Laptop</a></li>
                   <li><a href="#" class="link">Computers And monitors</a></li>
@@ -26,7 +26,7 @@
               </ul>
           </li>
           <li>
-              <a href="#" class="link"><b-icon icon="algolia"></b-icon> Home Applianses</a>
+              <a href="#" class="link"><b-icon icon="plug"></b-icon> Home Applianses</a>
               <ul class="submenu right">
                   <li><a href="#" class="link">Washing Machine</a></li>
                   <li><a href="#" class="link">Refrigerators</a></li>
@@ -40,7 +40,7 @@
               </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="fan"></b-icon> Air Condition Uint</a>
+            <a href="#" class="link"><b-icon icon="lightning"></b-icon> Air Condition Uint</a>
           </li>
           <li>
               <a href="#" class="link"><b-icon icon="tv"></b-icon> TVs, Mointors</a>
@@ -56,7 +56,7 @@
               </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="blender-phone"></b-icon> Kitchen Appliances</a>
+            <a href="#" class="link"><b-icon icon="plug"></b-icon> Kitchen Appliances</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Microwave</a></li>
               <li><a href="#" class="link">Small Ovens</a></li>
@@ -70,7 +70,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Men’s And Women Fashion</a>
+            <a href="#" class="link"><b-icon icon="watch"></b-icon> Men’s And Women Fashion</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Men's Fashion</a></li>
               <li><a href="#" class="link">Men's Perfumes</a></li>
@@ -89,7 +89,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Sports Equipment</a>
+            <a href="#" class="link"><b-icon icon="trophy"></b-icon> Sports Equipment</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Sports Equipment</a></li>
               <li><a href="#" class="link">Sportswear</a></li>
@@ -98,10 +98,10 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Books</a>
+            <a href="#" class="link"><b-icon icon="book"></b-icon> Books</a>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Home, Furniture And Gadgets</a>
+            <a href="#" class="link"><b-icon icon="columns-gap"></b-icon> Home, Furniture And Gadgets</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Electrical And Hand Tools</a></li>
               <li><a href="#" class="link">Garden Supplies</a></li>
@@ -112,7 +112,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Super Market - Grocery</a>
+            <a href="#" class="link"><b-icon icon="cart4"></b-icon> Super Market - Grocery</a>
             <ul class="submenu right">
               <li><a href="#" class="link">All Grocery Products</a></li>
               <li><a href="#" class="link">Cheese, Dairy And Milk</a></li>
@@ -125,7 +125,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Health and Medicine</a>
+            <a href="#" class="link"><b-icon icon="circle"></b-icon> Health and Medicine</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Body Care Products</a></li>
               <li><a href="#" class="link">Oral And Dental Care Products</a></li>
@@ -137,7 +137,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Toys And Kids</a>
+            <a href="#" class="link"><b-icon icon="controller"></b-icon> Toys And Kids</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Baby Care Essentials</a></li>
               <li><a href="#" class="link">Baby Carriages</a></li>
@@ -148,7 +148,7 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="link"><b-icon icon="credit-card"></b-icon> Office and school supplies</a>
+            <a href="#" class="link"><b-icon icon="pen"></b-icon> Office and school supplies</a>
             <ul class="submenu right">
               <li><a href="#" class="link">Back To School</a></li>
               <li><a href="#" class="link">School Books</a></li>
@@ -161,8 +161,8 @@
           </li>
         </ul>
       </li>
-      <li class="menu-item"><router-link to="Deals" class="menu-item-link">Daily Deals</router-link></li>
-      <li class="menu-item"><router-link to="Market" class="menu-item-link">Supper Market</router-link></li>
+      <li class="menu-item"><router-link to="/Deals" class="menu-item-link">Daily Deals</router-link></li>
+      <li class="menu-item"><router-link to="/Market" class="menu-item-link">Supper Market</router-link></li>
       <li class="menu-item"><a href="#" class="menu-item-link">English</a></li>
     </ul>
   </div>
@@ -258,5 +258,6 @@ export default {
     }
   }
 }
+
 
 </style>

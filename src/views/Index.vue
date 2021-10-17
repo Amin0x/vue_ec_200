@@ -21,7 +21,9 @@
       <prod-card-list-component class="mt-4"></prod-card-list-component>
       <book-list-component class="mt-4"></book-list-component>    
     </div>
-
+    <div>
+      <brand-list></brand-list>
+    </div>
     <div>
       <b-modal id="modal-1" title="BootstrapVue">
         <p class="my-4">Hello from modal!</p>

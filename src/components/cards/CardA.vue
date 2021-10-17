@@ -1,11 +1,11 @@
 <template>
   <div class="card card_a">
       <div class="card-img">
-          <img class="img-fluid" src="https://dk3152lt3zvww.cloudfront.net/catalog/product/cache/94e6266911c855fdf4ece88e8e419e57/4/0/40567.jpg" alt="">
+          <router-link to="/products/1"><img class="img-fluid" src="https://dk3152lt3zvww.cloudfront.net/catalog/product/cache/94e6266911c855fdf4ece88e8e419e57/4/0/40567.jpg" alt=""></router-link>
       </div>
       <div class="card-body">
-          <p class="brand">MOBILE</p>
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <p class="brand"><router-link to="/categories/1" class="text-reset text-decoration-none">MOBILE</router-link></p>
+          <router-link to="/products/1" class="text-decoration-none"><h5>Lorem ipsum dolor sit amet consectetur.</h5></router-link>
           <p class="desc" style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, itaque aspernatur? Animi, ducimus.</p>
           <p class="brand_logo"><img class="img-fluid" src="https://www.owniqs.co/wp-content/plugins/content-egg/res/logos/amazon-sa.png" alt=""></p>
       </div>
@@ -21,8 +21,8 @@
       </div>
       <div class="buttons_wrap">
           <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="heart"></b-icon></a>
-          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="heart"></b-icon></a>
-          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="heart"></b-icon></a>
+          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="zoom-in"></b-icon></a>
+          <a href="" class="btn rounded-circle aa-btn shadow-sm"><b-icon icon="arrow-left-right"></b-icon></a>
       </div>
   </div>
 </template>
